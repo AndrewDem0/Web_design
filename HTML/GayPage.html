@@ -1,109 +1,19 @@
-﻿<
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-<head>
-    <title>Andrew Demudenko</title>
-    <style>
-        .Card {
-            background-color: HSL(120, 23%, 76%);
-            border: 2px solid black;
-            margin: 10px;
-            padding: 10px;
-        }
-
-        #TeaHeader {
-            background-color: palegreen;
-            color: black;
-            padding: 5px;
-        }
-    </style>
-</head>
 <body>
-    <h1>Andrew Demudenko</h1>
-    <h3>About my personality</h3>
-    <p><strong>Name:</strong> Andrew<br><strong>Surename:</strong> Demudenko<br><strong>Age:</strong> 18</p>
-    <img src="photo/GitHub-Mark.jpg" alt="git logo" height="100" width="100" />
-    <a href="https://github.com/AndrewDem0"><mark>My GitHub</mark></a>
-    <hr />
-    <h2>My photo</h2>
-    <img src="photo/images.jpg" height="225" width="208" />
-    <pre>  <cite>the best photo of my life</cite> <b>by my mom.In 1991</b> </pre>
-    <hr />
-    <h4 style="color:white;background-color:darkorchid;text-align:center;font-family:Arial"> (<sup>--</sup>--<sub>--</sub>coding coding coding сoding coding coding coding<sub>--</sub>--<sup>--</sup>)</h4>
-    <hr />
-    <p>
-    <p>Маю <del>певні</del> базові навички у мовах: C++, Python</p>
-    <p>Зараз активно вивчаю: <abbr title="HyperText Markup Language">HTML</abbr>, C# та додатково освоюю <ins>Adobe Photoshop</ins></p>
-    <p>Одного разу мені сказали: <q><i>Нітреба скігліти, потрібно брати лопату і годувати сім'ю'</i></q></p>
 
-    <p> The most motivational quote:</p>
-    <blockquote cite="https://everydaypower.com/dragon-ball-z-quotes/">
-        Kakarot, you’re quite impressive. I never stood a chance against Buu, you’re the only one who can fight him.<br>
-        think I finally understand how a genius like myself can’t surpass you. I thought it was because you had something to protect. <br>
-        I thought your drive to protect allowed you to take advantage of your capabilities… this may have been a reason, but not I too have this drive.<br>
-        I fought to do as I wished, because it was fun to kill my enemies and feed my pride<br>
-        But he’s different, he fights not to win but because he absolutely won’t lose, <br>
-        causing him to break his limits and he really doesn’t care who his opponent is. So when he didn’t kill me<br>
-        it was because he saw I could care for others, like I do now… Go Kakarot, you’re number one!<br>
-    </blockquote>
-    <table border="1" bgcolor="black">
-        <caption style="padding-left: 10px; font-size: 20px;"><b>Затрати на лабораторні роботи</b></caption>
-        <colgroup>
-            <col style="background-color: lightblue;">
-            <col style="background-color: white;">
-            <col style="background-color: lightcoral;">
-        </colgroup>
-        <thead>
-            <tr align="center">
-                <th>Час на виконання</th>
-                <th>Кількість чашок чаю</th>
-                <th>Час на пошук інформації</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr align="center">
-                <td>1000 хв</td>
-                <td>2</td>
-                <td>7 хв</td>
-            </tr>
-            <tr align="center">
-                <td>450 хв</td>
-                <td>3</td>
-                <td>4 хв</td>
-            </tr>
-            <tr align="center">
-                <td>519 хв</td>
-                <td>2</td>
-                <td>3 хв</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr align="center">
-                <th>1969</th>
-                <th>7</th>
-                <th>14</th>
-            </tr>
-        </tfoot>
-    </table>
-    <h3 id="TeaHeader">Кількість ложок чаю кожного заварювання</h3>
-    <ul>
-        <li>3 ложки</li>
-        <li>5 ложки</li>
-        <li>1 ложки</li>
-    </ul>
-    <h3 id="TeaHeader">Кількість ложок цукру кожного заварювання</h3>
-    <ol>
-        <li>не додаю цукор до чаю</li>
-        <li>не додаю цукор до чаю</li>
-        <li>не додаю цукор до чаю</li>
-    </ol>
-    <hr />
-    <div class="Card">
-        <address style="color: rgb(106, 90, 205); ">
-            Phone: +380967512375<br>My box 11092001
-        </address>
-    </div>
-    <hr />
-    <p><b>P.S</b> <span style="border: 1px solid black"><small> <em>сторінка буде поповнюватись інформацію в період розробки</em></small></span></p>
+    <h2>HTML Forms</h2>
+
+    <form action="/result.html" target="_blank" method="get">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
 </body>
 </html>
