@@ -3,21 +3,24 @@
 <body>
 
     <h1>HTML Forms</h1>
-    <hr>
+    <hr> <!--<form action="/result.html" target="_blank" method="get">-->
     <h2>The datalist element</h2>
 
     <form action="/action_page.php" method="get">
-        <label for="browser">Choose your browser from the list:</label>
-        <input list="browsers" name="browser" id="browser">
-        <datalist id="browsers">
-            <option value="Edge">
-            <option value="Firefox">
-            <option value="Chrome">
-            <option value="Opera">
-            <option value="Safari">
-        </datalist>
-        <input type="submit">
-    </form>
+        <fieldset>
+            <legend>Legend</legend>
+            <label for="browser">Choose your browser from the list:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <input type="submit">
+        </fieldset>
+</form>
     <hr>
 
     <h2>The output element</h2>
@@ -40,6 +43,24 @@
     </form>
     <hr>
 
+    <h1>Вибір кольору</h1>
+    <p>Будь ласка, виберіть свій улюблений колір:</p>
+
+    <!-- Елемент <select> -->
+    <select>
+        <option value="червоний">Червоний</option>
+        <option value="зелений">Зелений</option>
+        <option value="синій">Синій</option>
+        <option value="жовтий">Жовтий</option>
+    </select>
+
+    <br>
+
+    <!-- Кнопка для відправлення форми (необов'язково) -->
+    <input type="submit" value="Відправити">
+
+    <hr>
+
     <h2>Password field</h2>
 
     <p>The <strong>input type="password"</strong> defines a password field:</p>
@@ -53,9 +74,25 @@
     </form>
     <hr>
 
+    <h2>Textarea</h2>
+    <p>Будь ласка, введіть свій коментар:</p>
+
+    <!-- Елемент <textarea> -->
+    <textarea rows="4" cols="50">
+        Це приклад багатострокового текстового поля.
+        Ви можете вводити багатостроковий текст тут.
+    </textarea>
+
+    <br>
+
+    <!-- Кнопка для відправлення форми (необов'язково) -->
+    <input type="submit" value="Відправити">
+
+
     <h2>Submit Button</h2>
 
     <p>The <strong>input type="submit"</strong> defines a button for submitting form data to a form-handler:</p>
+    <hr>
 
     <form action="/action_page.php">
         <label for="fname">First name:</label><br>
