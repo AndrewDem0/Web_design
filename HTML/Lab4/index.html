@@ -3,12 +3,238 @@
 <body>
 
     <h1>HTML Forms</h1>
-    <h2>The output element</h2>
 
     <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-        <input type="range" id="a" value="50">
-        +<input type="number" id="b" value="25">
-        =<output name="x" for="a b"></output>
+        <fieldset>
+            <legend style="font-size: 30px;"><b>The output element</b></legend>
+            <input type="range" id="a" value="50">
+            +<input type="number" id="b" value="25">
+            =<output name="x" for="a b"></output>
+        </fieldset>
+    </form>
+    <br>
+    <form action="/Chose smt.html" target="_blank">
+        <fieldset>
+            <legend style="font-size: 30px;"><b>Time forms</b></legend>
+
+            <h2>The datalist element</h2>
+
+            <label for="browser">Choose your browser from the list:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <hr>
+
+            <h2>Text field</h2>
+
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <hr>
+
+            <h2>Password field</h2>
+            <p>The <strong>input type="password"</strong> defines a password field:</p>
+
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br><br>
+            <hr>
+
+            <h2>Textarea</h2>
+            <p>Будь ласка, введіть свій коментар:</p>
+
+            <textarea rows="10" cols="30">поле для вводу
+        </textarea>
+            <hr>
+
+            <h2>Email Field</h2>
+            <p>The <strong>input type="email"</strong> is used for input fields that should contain an e-mail address:</p>
+
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email">
+            <hr>
+
+            <h2>A Hidden Field (look in source code)</h2>
+
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="hidden" id="custId" name="custId" value="3487">
+            <hr>
+
+            <h2>Search Field</h2>
+            <p>The <strong>input type="search"</strong> is used for search fields (behaves like a regular text field):</p>
+
+            <label for="gsearch">Search Google:</label>
+            <input type="search" id="gsearch" name="gsearch">
+            <hr>
+
+            <h2>Telephone Field</h2>
+            <p>The <strong>input type="tel"</strong> is used for input fields that should contain a telephone number:</p>
+
+            <label for="phone">Enter a phone number:</label><br><br>
+            <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+            <small>Format: 123-45-678</small><br><br>
+            <hr>
+
+            <h2>Display a URL Input Field</h2>
+            <p>The <strong>input type="url"</strong> is used for input fields that should contain a URL address:</p>
+
+            <label for="homepage">Add your homepage:</label>
+            <input type="url" id="homepage" name="homepage">
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+    <br>
+
+    <form action="/Tekst forms.html" target="_blank">
+        <fieldset>
+            <legend style="font-size: 30px;"><b>Time forms</b></legend>
+            <div style="background-color: rgb(255, 64, 0) ">
+                <h2>Date Field</h2>
+                <p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
+
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+
+            <div style="background-color: rgb(255, 191, 0) ">
+                <h2>Date Field Restrictions</h2>
+                <p>Use the min and max attributes to add restrictions to dates:</p>
+
+                <label for="datemin">Enter a date after 2000-01-01:</label>
+                <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+                <label for="datemax">Enter a date before 1980-01-01:</label>
+                <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+            </div>
+
+            <div style="background-color: rgb(255, 255, 0) ">
+                <h2>Local Date Field</h2>
+                <p>The <strong>input type="datetime-local"</strong> specifies a date and time input field, with no time zone.</p>
+
+                <label for="birthdaytime">Birthday (date and time):</label>
+                <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            </div>
+
+            <div style="background-color: rgb(0, 147, 0) ">
+                <h2>Month Field</h2>
+                <p>The <strong>input type="month"</strong> allows the user to select a month and year.</p>
+
+                <label for="bdaymonth">Birthday (month and year):</label>
+                <input type="month" id="bdaymonth" name="bdaymonth">
+            </div>
+
+            <div style="background-color: rgb(0, 64, 255) ">
+                <h2>Show a Time Input Control</h2>
+
+                <p>The <strong>input type="time"</strong> allows the user to select a time (no time zone):</p>
+                <p>If the browser supports it, a time picker pops up when entering the input field.</p>
+
+                <label for="appt">Select a time:</label>
+                <input type="time" id="appt" name="appt">
+            </div>
+
+            <div style="background-color: rgb(152, 17, 145) ">
+                <h2>Display a Week Input Control</h2>
+                <p>The <strong>input type="week"</strong> allows the user to select a week and year.</p>
+                <p>If the browser supports it, a date picker pops up when entering the input field.</p>
+
+                <label for="week">Select a week:</label>
+                <input type="week" id="week" name="week">
+                <br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </fieldset>
+    </form>
+    <br>
+
+    <form action="/Time forms.html" target="_blank" method="get">
+        <fieldset>
+            <legend style="font-size: 30px;"><b>Chose form</b></legend>
+            <h2>The datalist element</h2>
+
+            <label for="browser">Choose your browser from the list:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <hr>
+
+            <h2>Chose option</h2>
+            <p>I Need More.....</p>
+
+            <select>
+                <option value="Weapon">Weapon</option>
+                <option value="Bullets">Bullets</option>
+                <option value="Croissant">Croissant</option>
+            </select>
+            <hr>
+
+            <h2>Radio Buttons</h2>
+            <p>The <strong>input type="radio"</strong> defines a radio button:</p>
+            <p>Choose your favorite Web language:</p>
+
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br><br>
+            <hr>
+
+            <h2>Checkboxes</h2>
+            <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br><br>
+            <hr>
+
+            <h2>Input Button</h2>
+
+            <input type="button" onclick="alert('Засновник наш герой!')" value="Click Me!">
+            <hr>
+
+            <h2>Show a Color Picker</h2>
+            <p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
+
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff1488">
+            <hr>
+
+            <h2>File upload</h2>
+            <p>Show a file-select field which allows a file to be chosen for upload:</p>
+
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <hr>
+
+            <h2>Number Field</h2>
+            <p>The <strong>input type="number"</strong> defines a numeric input field.</p>
+            <p>You can use the min and max attributes to add numeric restrictions in the input field:</p>
+
+            <label for="quantity">Quantity (between 0 and 80):</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="80" step="5" value="30">
+            <br><br>
+            <input type="image" src="photo/img_submit.jpg" alt="Submit" width="48" height="48">
+            <input type="image" src="photo/img_reset.jpg" alt="Reset" width="48" height="48">
+        </fieldset>
     </form>
 </body>
 </html>
