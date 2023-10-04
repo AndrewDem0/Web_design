@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend style="font-size: 30px;"><b>Time forms</b></legend>
+
+            <h2>The datalist element</h2>
+
+            <label for="browser">Choose your browser from the list:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <hr>
+
+            <h2>Text field</h2>
+
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+            <hr>
+
+            <h2>Password field</h2>
+            <p>The <strong>input type="password"</strong> defines a password field:</p>
+
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br><br>
+            <input type="submit" value="Submit">
+            <hr>
+
+            <h2>Textarea</h2>
+            <p>Будь ласка, введіть свій коментар:</p>
+
+<textarea rows="4" cols="50">
+    Це приклад багатострокового текстового поля.
+    Ви можете вводити багатостроковий текст тут.
+</textarea>
+        </fieldset>
+    </form>
+</body>
+</html>
