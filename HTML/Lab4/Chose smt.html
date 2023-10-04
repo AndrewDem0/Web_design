@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <form action="/Time forms.html" target="_blank" method="get">
+        <fieldset>
+            <legend style="font-size: 30px;"><b>Chose form</b></legend>
+            <h2>The datalist element</h2>
+
+            <label for="browser">Choose your browser from the list:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <hr>
+
+            <h2>Chose option</h2>
+            <p>I Need More.....</p>
+
+            <select>
+                <option value="Weapon">Weapon</option>
+                <option value="Bullets">Bullets</option>
+                <option value="Croissant">Croissant</option>
+            </select>
+            <hr>
+
+            <h2>Radio Buttons</h2>
+            <p>The <strong>input type="radio"</strong> defines a radio button:</p>
+            <p>Choose your favorite Web language:</p>
+
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br><br>
+            <hr>
+
+            <h2>Checkboxes</h2>
+            <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br><br>
+            <hr>
+
+            <h2>Input Button</h2>
+
+            <input type="button" onclick="alert('Засновник наш герой!')" value="Click Me!">
+            <hr>
+
+            <h2>Show a Color Picker</h2>
+            <p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
+
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff1488">
+            <hr>
+
+            <h2>File upload</h2>
+            <p>Show a file-select field which allows a file to be chosen for upload:</p>
+
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <hr>
+
+            <h2>Number Field</h2>
+            <p>The <strong>input type="number"</strong> defines a numeric input field.</p>
+            <p>You can use the min and max attributes to add numeric restrictions in the input field:</p>
+
+            <label for="quantity">Quantity (between 0 and 80):</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="80" step="5" value="30">
+            <br><br>
+            <input type="image" src="photo/img_submit.jpg" alt="Submit" width="48" height="48">
+            <input type="image" src="photo/img_reset.jpg" alt="Reset" width="48" height="48">
+        </fieldset>
+    </form>
+</body>
+</html>
