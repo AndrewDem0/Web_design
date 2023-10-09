@@ -10,8 +10,8 @@
     <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
         <fieldset>
             <legend style="font-size: 30px;"><b>The output element</b></legend>
-            <input type="range" id="a" value="50">
-            +<input type="number" id="b" value="25">
+            <input type="range" id="a" name="a" value="50">
+            +<input type="number" id="b" name="b" value="25">
             =<output name="x" for="a b"></output>
         </fieldset>
     </form>
@@ -163,18 +163,6 @@
     <form action="/Time forms.html" target="_blank" method="get">
         <fieldset>
             <legend style="font-size: 30px;"><b>Chose form</b></legend>
-            <h2>The datalist element</h2>
-
-            <label for="browser">Choose your browser from the list:</label>
-            <input list="browsers" name="browser" id="browser">
-            <datalist id="browsers">
-                <option value="Edge">
-                <option value="Firefox">
-                <option value="Chrome">
-                <option value="Opera">
-                <option value="Safari">
-            </datalist>
-            <hr>
 
             <h2>Chose option</h2>
             <p>I Need More.....</p>
