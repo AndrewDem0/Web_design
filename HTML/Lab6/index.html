@@ -10,6 +10,12 @@
     <meta name="author" content="Andrew">
 
     <style>
+        hr.border {
+            border: 2px solid #f670d9;
+        }
+        #BorderId {
+            border: 2px solid rgb(236, 152, 73);
+        }
         .Card {
             background-color: HSL(120, 23%, 76%);
             border: 2px solid black;
@@ -24,6 +30,12 @@
             float: right;
         }
 
+        li a {
+            background: linear-gradient(to right, #FF0018, #FFA52C, #FFD700, #008018, #0000F9, #8B00FF);
+            padding: 4px;
+            color: aliceblue;
+        }
+
         details>summary {
             padding: 4px;
             width: 220px;
@@ -31,6 +43,13 @@
             border: none;
             box-shadow: 1px 1px 2px #bbbbbb;
             cursor: pointer;
+        }
+
+        details>blockquote {
+            background-color: #eeeeee;
+            padding: 4px;
+            margin: 0;
+            box-shadow: 1px 1px 2px #bbbbbb;
         }
     </style>
 </head>
@@ -58,21 +77,22 @@
         </figure>
     </section>
     <br><br>
-    <hr>
+    <hr class="border">
     <nav style="font-size:1.4vw">
         <ul>
             <li><a href="https://www.w3schools.com/tags/tag_nav.asp">HTML nav Tag</a></li>
+            <br>
             <li><a href="https://www.youtube.com/watch?v=vheofoXY508">any more bullets</a></li>
-            <li><a href="check.html">check</a></li>
+            <br>
+            <li><a href="result.html">result</a></li>
         </ul>
     </nav>
-    <hr>
+    <hr id="BorderId">
     <main>
         <article>
             <p>Маю <del>певні</del> базові навички у мовах: C++, Python</p>
             <p>Зараз активно вивчаю: <abbr title="HyperText Markup Language">HTML</abbr>, C# та додатково освоюю
-                <ins>Adobe
-                    Photoshop</ins></p>
+                <ins>Adobe Photoshop</ins></p>
             <p>Одного разу мені сказали: <q><i>Нітреба скігліти, потрібно брати лопату і годувати сім'ю'</i></q>
         </article>
         <br>
