@@ -1,7 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <title>Andrew Demudenko</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Web page">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Andrew">
+
     <style>
         .Card {
             background-color: HSL(120, 23%, 76%);
@@ -9,103 +16,110 @@
             margin: 10px;
             padding: 10px;
         }
-        #TeaHeader {
-            background-color: palegreen;
-            color: black;
-            padding: 5px;
+
+        aside {
+            width: 80%;
+            padding-left: 1px;
+            margin-left: 1px;
+            float: right;
+        }
+
+        details>summary {
+            padding: 4px;
+            width: 220px;
+            background-color: #eeeeee;
+            border: none;
+            box-shadow: 1px 1px 2px #bbbbbb;
+            cursor: pointer;
+        }
+
+        details>p {
+            background-color: #eeeeee;
+            padding: 4px;
+            margin: 0;
+            box-shadow: 1px 1px 2px #bbbbbb;
         }
     </style>
 </head>
-<body>
-    <h1>Andrew Demudenko</h1>
-    <h3>About my
-          personality</h3>
-    <p><strong>Name:</strong> Andrew<br><strong>Surename:</strong> Demudenko<br><strong>Age:</strong> 18</p>
-    <img src="photo/GitHub-Mark.jpg" alt="git logo" style="max-width:100%;height:auto;" height="100" width="100" />
-    <a href="https://github.com/AndrewDem0"><mark>My GitHub</mark></a>
-    <hr />
-    <h2>My photo</h2>
-    <img src="photo/images.jpg" height="225" width="208" />
-    <pre>the best
-          photo of my life <b>by my mom.In 1991</b> </pre>
-    <hr />
-    <nav>
-    <h4 style="color:white;background-color:darkorchid;text-align:center;font-family:Arial"> (<sup>--</sup>--<sub>--</sub>coding coding coding сoding coding coding coding<sub>--</sub>--<sup>--</sup>)</h4>
-    </nav>
-    <hr />
-    <p>
-    <p>Маю <del>певні</del> базові навички у мовах: C++, Python</p>
-    <p>Зараз активно вивчаю: <abbr title="HyperText Markup Language">HTML</abbr>, C# та додатково освоюю <ins>Adobe Photoshop</ins></p>
-    <p>Одного разу мені сказали: <q><i>Нітреба скігліти, потрібно брати лопату і годувати сім'ю'</i></q></p>
 
-    <p> The most motivational quote:</p>
-    <blockquote cite="https://everydaypower.com/dragon-ball-z-quotes/">
-        Kakarot, you’re quite impressive. I never stood a chance against Buu, you’re the only one who can fight him.<br>
-        think I finally understand how a genius like myself can’t surpass you. I thought it was because you had something to protect. <br>
-        I thought your drive to protect allowed you to take advantage of your capabilities… this may have been a reason, but not I too have this drive.<br>
-        I fought to do as I wished, because it was fun to kill my enemies and feed my pride<br>
-        But he’s different, he fights not to win but because he absolutely won’t lose, <br>
-        causing him to break his limits and he really doesn’t care who his opponent is. So when he didn’t kill me<br>
-        it was because he saw I could care for others, like I do now… Go Kakarot, you’re number one!<br>
-    </blockquote>
-    <table border="1" bgcolor="black">
-        <caption style="padding-left: 10px; font-size: 20px;"><b>Затрати на лабораторні роботи</b></caption>
-        <colgroup>
-            <col style="background-color: lightblue;">
-            <col style="background-color: white;">
-            <col style="background-color: lightcoral;">
-        </colgroup>
-        <thead>
-            <tr align="center">
-                <th>Час на виконання</th>
-                <th>Кількість чашок чаю</th>
-                <th>Час на пошук інформації</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr align="center">
-                <td>1000 хв</td>
-                <td>2</td>
-                <td>7 хв</td>
-            </tr>
-            <tr align="center">
-                <td>450 хв</td>
-                <td>3</td>
-                <td>4 хв</td>
-            </tr>
-            <tr align="center">
-                <td>519 хв</td>
-                <td>2</td>
-                <td>3 хв</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr align="center">
-                <th>1969</th>
-                <th>7</th>
-                <th>14</th>
-            </tr>
-        </tfoot>
-    </table>
-    <h3 id="TeaHeader">Кількість ложок чаю кожного заварювання</h3>
-    <ul>
-        <li>3 ложки</li>
-        <li>5 ложки</li>
-        <li>1 ложки</li>
-    </ul>
-    <h3 id="TeaHeader">Кількість ложок цукру кожного заварювання</h3>
-    <ol>
-        <li>не додаю цукор до чаю</li>
-        <li>не додаю цукор до чаю</li>
-        <li>не додаю цукор до чаю</li>
-    </ol>
-    <hr />
-    <div class="Card">
-        <address style="color: rgb(106, 90, 205); ">
-            Phone: +380967512375<br>My box 11092001
-        </address>
-    </div>
-    <hr />
-    <p><b>P.S</b> <span style="border: 1px solid black"><small> <em>сторінка буде поповнюватись інформацію в період розробки</em></small></span></p>
+<body>
+    <aside>
+        <img src="photo/images.jpg" style="max-width:100%; height:auto;"/>
+    </aside>
+    <section style="font-size:1.5vw">
+        <header>
+            <h1>Andrew Demudenko</h1>
+            <h3>About mypersonality</h3>
+        </header>
+        <p>
+            <strong>Name:</strong>Andrew
+            <br>
+            <strong>Surename:</strong> Demudenko
+            <br>
+            <strong>Age:</strong> 18
+        </p>
+        <figure>
+            <img src="photo/hqdefault.jpg" alt="git logo"/>
+            <a href="https://github.com/AndrewDem0"><mark>My GitHub</mark></a>
+            <!--<figcaption></figcaption>-->
+        </figure>
+    </section>
+    <br><br>
+    <hr>
+    <nav style="font-size:1.4vw">
+        <ul>
+            <li><a href="https://www.w3schools.com/tags/tag_nav.asp">HTML nav Tag</a></li>
+            <li><a href="https://www.youtube.com/watch?v=vheofoXY508">any more bullets</a></li>
+            <li><a href="result.html">result</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <article>
+            <p>Маю <del>певні</del> базові навички у мовах: C++, Python</p>
+            <p>Зараз активно вивчаю: <abbr title="HyperText Markup Language">HTML</abbr>, C# та додатково освоюю
+                <ins>Adobe
+                    Photoshop</ins></p>
+            <p>Одного разу мені сказали: <q><i>Нітреба скігліти, потрібно брати лопату і годувати сім'ю'</i></q>
+        </article>
+        <br>
+        <details>
+            <summary> The most motivational quote:</summary>
+            <blockquote cite="https://everydaypower.com/dragon-ball-z-quotes/">
+                Kakarot, you’re quite impressive. I never stood a chance against Buu, you’re the only one who can fight
+                him.<br>
+                think I finally understand how a genius like myself can’t surpass you. I thought it was because you had
+                something to protect. <br>
+                I thought your drive to protect allowed you to take advantage of your capabilities… this may have been a
+                reason,
+                but not I too have this drive.<br>
+                I fought to do as I wished, because it was fun to kill my enemies and feed my pride<br>
+                But he’s different, he fights not to win but because he absolutely won’t lose, <br>
+                causing him to break his limits and he really doesn’t care who his opponent is. So when he didn’t kill
+                me<br>
+                it was because he saw I could care for others, like I do now… Go Kakarot, you’re number one!<br>
+            </blockquote>
+        </details>
+    </main>
+    <hr>
+    <figure>
+        <picture>
+            <source srcset="photo/200x200.jpg" media="(max-width: 500px)">
+            <source srcset="photo/500x500.jpg" media="(max-width: 800px)">
+            <source srcset="photo/800x800.jpg" media="(max-width: 1000px)">
+            <img src="photo/Знімок екрана 2023-10-15 141819.jpg" alt="Адаптивні зображення">
+            <figcaption>Приклад адаптивного зображення</figcaption>
+        </picture>
+    </figure>
+    <hr>
+    <!--<p><a href="tags/tag_base.asp">HTML base tag</a> - Notice that the link opens in a new window, even if it has no target="_blank" attribute. This is because the target attribute of the base element is set to "_blank".</p>-->
+    <footer style="font-size:1.2vw">
+        <div class="Card">
+            <address style="color: rgb(106, 90, 205); ">
+                Phone: +380967512375<br>My box 11092001<br>
+                Open from <time>10:00</time> to <time>21:00</time> every weekday.
+            </address>
+        </div>
+    </footer>
 </body>
 </html>
