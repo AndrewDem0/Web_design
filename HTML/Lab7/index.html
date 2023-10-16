@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Andrew Demudenko</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Web page">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Andrew">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <aside>
+        <img src="photo/images.jpg" style="max-width:100%; height:auto;"/>
+    </aside>
+    <section style="font-size:1.5vw">
+        <header>
+            <h1>Andrew Demudenko</h1>
+            <h3>About mypersonality</h3>
+        </header>
+        <p>
+            <strong>Name:</strong>Andrew
+            <br>
+            <strong>Surename:</strong> Demudenko
+            <br>
+            <strong>Age:</strong> 18
+        </p>
+        <figure>
+            <img src="photo/hqdefault.jpg" alt="git logo"/>
+            <a href="https://github.com/AndrewDem0"><mark>My GitHub</mark></a>
+            <!--<figcaption></figcaption>-->
+        </figure>
+    </section>
+    <br><br>
+    <hr class="border">
+    <nav style="font-size:1.4vw">
+        <ul>
+            <li><a href="https://www.w3schools.com/tags/tag_nav.asp">HTML nav Tag</a></li>
+            <br>
+            <li><a href="https://www.youtube.com/watch?v=vheofoXY508">any more bullets</a></li>
+            <br>
+            <li><a href="result.html">result</a></li>
+        </ul>
+    </nav>
+    <hr id="BorderId">
+    <main>
+        <article>
+            <p>Маю <del>певні</del> базові навички у мовах: C++, Python</p>
+            <p>Зараз активно вивчаю: <abbr title="HyperText Markup Language">HTML</abbr>, C# та додатково освоюю
+                <ins>Adobe Photoshop</ins>
+            </p>
+            <p>Одного разу мені сказали: <q><i>Нітреба скігліти, потрібно брати лопату і годувати сім'ю'</i></q>
+        </article>
+        <br>
+        <details>
+            <summary> The most motivational quote:</summary>
+            <blockquote cite="https://everydaypower.com/dragon-ball-z-quotes/">
+                Kakarot, you’re quite impressive. I never stood a chance against Buu, you’re the only one who can fight
+                him.<br>
+                think I finally understand how a genius like myself can’t surpass you. I thought it was because you had
+                something to protect. <br>
+                I thought your drive to protect allowed you to take advantage of your capabilities… this may have been a
+                reason,
+                but not I too have this drive.<br>
+                I fought to do as I wished, because it was fun to kill my enemies and feed my pride<br>
+                But he’s different, he fights not to win but because he absolutely won’t lose, <br>
+                causing him to break his limits and he really doesn’t care who his opponent is. So when he didn’t kill
+                me<br>
+                it was because he saw I could care for others, like I do now… Go Kakarot, you’re number one!<br>
+            </blockquote>
+        </details>
+    </main>
+    <hr>
+    <figure>
+        <picture>
+            <source srcset="photo/200x200.jpg" media="(max-width: 500px)">
+            <source srcset="photo/500x500.jpg" media="(max-width: 800px)">
+            <source srcset="photo/800x800.jpg" media="(max-width: 1000px)">
+            <img src="photo/Знімок екрана 2023-10-15 141819.jpg" alt="Адаптивні зображення">
+            <figcaption>Приклад адаптивного зображення</figcaption>
+        </picture>
+    </figure>
+    <hr>
+    <form>
+        <label for="reset"> введіть свою оцінку сайту по 10 бальній шкалі:</label><br>
+        <input type="reset" value="Reset" />
+        <input type="number" id="quantity" name="quantity" min="1" max="10" step="1">
+        <input type="submit" value="Submit" />
+    </form>
+    <footer style="font-size:1.2vw">
+        <div class="Card">
+            <address style="color: rgb(106, 90, 205); ">
+                Phone: +380967512375<br>My box 11092001<br>
+                Open from <time>10:00</time> to <time>21:00</time> every weekday.
+            </address>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>Опитування</h1>
+
+    <form action="/action_page.php" method="post">
+        <h2>Виберіть браузер</h2>
+        <label for="browser">Оберіть браузер зі списку:</label>
+        <select id="browser" name="browser">
+            <option value="Edge">Edge</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Opera">Opera</option>
+            <option value="Safari">Safari</option>
+        </select>
+
+        <h2>Введіть дані</h2>
+        <label for="fname">Ім'я:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Прізвище:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+
+        <h2>Виберіть колір</h2>
+        <label for="color">Оберіть ваш улюблений колір:</label><br>
+        <input type="color" id="color" name="color"><br>
+
+        <h2>Введіть коментар</h2>
+        <label for="comment">Введіть ваш коментар:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+
+        <h2>Оберіть мову програмування</h2>
+        <p>Оберіть вашу улюблену мову програмування:</p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+
+        <h2>Оберіть ваші уподобання</h2>
+        <p>Оберіть ваші уподобання:</p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Маю велосипед</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Маю автомобіль</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Маю човен</label><br>
+
+        <input type="submit" value="Відправити">
+    </form>
+</body>
+</html>
