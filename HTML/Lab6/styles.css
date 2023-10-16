@@ -1,0 +1,41 @@
+hr.border {
+    border: 2px solid #f670d9;
+}
+#BorderId {
+    border: 2px solid rgb(236, 152, 73);
+}
+.Card {
+    background-color: HSL(120, 23%, 76%);
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+aside {
+    width: 80%;
+    padding-left: 1px;
+    margin-left: 1px;
+    float: right;
+}
+
+li a {
+    background: linear-gradient(to right, #FF0018, #FFA52C, #FFD700, #008018, #0000F9, #8B00FF);
+    padding: 4px;
+    color: aliceblue;
+}
+
+details>summary {
+    padding: 4px;
+    width: 220px;
+    background-color: #eeeeee;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+}
+
+details>blockquote {
+    background-color: #eeeeee;
+    padding: 4px;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+}
