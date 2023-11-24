@@ -43,7 +43,7 @@ input[type="reset"] {
     background-color: rgb(224, 126, 183);
     width:100px;
     }
-form input[type="submit"] {
+form input[id="quantity"] {
     background-color: lightgreen;
    }
 * {
