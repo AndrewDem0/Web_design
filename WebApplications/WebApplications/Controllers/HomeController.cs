@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using WebApplications.Data;
 using WebApplications.Models;
@@ -25,8 +26,25 @@ namespace WebApplications.Controllers
             //передаємо всі об'єкти в динамічну властивість Books y ViewBag
             ViewBag.Books = books;
             //повертаємо відображення
-            return View(model: user);
+            return View(books);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        public IActionResult Create(Book book)
+        {
+            if (book != null)
+            {
+                _dbContext.Books.Add(book);
+                _dbContext.SaveChanges();
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
 
         public IActionResult Privacy()
         {
