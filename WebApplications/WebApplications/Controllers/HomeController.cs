@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using WebApplications.Data;
 using WebApplications.Models;
 
 namespace WebApplications.Controllers
@@ -8,14 +9,23 @@ namespace WebApplications.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ApplicationDbContext _dbContext;
+
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext dbContext)
         {
             _logger = logger;
+            _dbContext = dbContext;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var user = HttpContext.User.Identity.Name;
+            //отримуємо з БД всі об'єкти Boоk
+            IEnumerable<Book> books = _dbContext.Books;
+            //передаємо всі об'єкти в динамічну властивість Books y ViewBag
+            ViewBag.Books = books;
+            //повертаємо відображення
+            return View(model: user);
         }
 
         public IActionResult Privacy()
