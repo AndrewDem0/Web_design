@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Прості селектори для елементів p */
+        p {
+            color: black; /* Специфіка: 1 (1 селектор елемента) */
+        }
+
+        p.test {
+            color: orange; /* Специфіка: 11 (1 селектор елемента + 10 селекторів класу) */
+        }
+
+        p#demo {
+            color: orchid; /* Специфіка: 101 (1 селектор елемента + 100 селекторів id) */
+        }
+
+        /* Селектори за ідентифікатором та класом для елементу з ідентифікатором demo та класом test */
+        #demo {
+            background-color: yellow; /* Специфіка: 100 (100 селекторів id) */
+        }
+
+        .test {
+            color: olivedrab; /* Специфіка: 10 (10 селекторів класу) */
+        }
+
+        /* Контекстний селектор: елемент p, який є нащадком елемента div */
+        div p {
+            color: brown; /* Специфіка: 11 (1 селектор елемента + 10 селекторів класу) */
+        }
+
+        /* Селектори ~ і + для елементу p, який є сусідом попереднього елемента div */
+        div ~ p {
+            font-size: 20px; /* Специфіка: 20 (20 селекторів сусідства) */
+        }
+
+        div + p {
+            font-size: 10px; /* Специфіка: 10 (10 селекторів сусідства) */
+        }
+
+        /* Функція calc() для задання ширини елемента p */
+        p.calc-example {
+            width: calc(100% - 20px); /* Специфіка: 11 (1 селектор елемента + 10 селекторів класу) */
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        /* Функції max() та min() для властивості font-size елементу p */
+        p.max-example {
+            width: max(50%, 300px); /* Специфіка: 11 (1 селектор елемента + 10 селекторів класу) */
+            border: 1px solid #3498db;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        p.min-example {
+            width: min(50%, 300px); /* Специфіка: 11 (1 селектор елемента + 10 селекторів класу) */
+            border: 1px solid #e74c3c;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        /* Використання !important для перевизначення правила */
+        p.important-example {
+            color: rgb(224, 90, 157) !important; /* Специфіка: 1000 (1000 селекторів !important) */
+        }
+    </style>
+    <title>Simple CSS Selectors</title>
+</head>
+<body>
+
+    <div>
+        <p>Простий текст.</p>
+        <p class="test">Текст з класом test.</p>
+        <p id="demo">Текст з ідентифікатором demo.</p>
+        <p style="color:red;">Текст з inline стилізацією кольору.</p>
+    </div>
+    <p id="demo" class="test">Елемент p з ідентифікатором demo та класом test.</p>
+
+    <div>
+        <p>Елемент p в середині елемента div.</p>
+    </div>
+    <div></div>
+    <p>Елемент p, який є наступником елемента div.</p>
+    <p>Елемент p, який є сусідом попереднього елемента div.</p>
+
+    <p class="calc-example">Елемент p з використанням функції calc().</p>
+
+    <p class="max-example">Елемент p з використанням функції max().</p>
+
+    <p class="min-example">Елемент p з використанням функції min().</p>
+
+    <p class="important-example">Елемент p з використанням !important.</p>
+
+</body>
+</html>
